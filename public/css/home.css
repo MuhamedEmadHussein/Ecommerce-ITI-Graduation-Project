@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(rgba(42, 0, 48, 0.822),rgb(94, 1, 70));
+    font-family: system-ui;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 95%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: Center;
+    margin: 25px;
+}
+header .logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    margin-right: 30px;
+} 
+header ul li a{
+padding: 6px 15px;
+font-weight: bold;
+}
+
+header ul li a:hover,.active{
+    background: white;
+    color: rgba(42, 0, 48, 0.822);
+    border-radius: 15px;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top,rgba(42, 0, 48, 0.822),transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit:contain;
+}
+#banner{
+    mix-blend-mode: screen;
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20PX;
+    font-size: 30PX;
+}
+.content p{
+    margin: 20px;
+}
+#stars{
+    z-index: 8;
+}
+.nav-item a {
+    position: relative;
+    display: inline-block;
+}
+.nav-item a:hover::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #333 transparent transparent transparent;
+}
