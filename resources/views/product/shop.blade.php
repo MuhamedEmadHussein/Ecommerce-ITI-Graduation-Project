@@ -66,6 +66,8 @@
     <div class="bottom-button">
         <a href="{{ route('dashboard') }}">Back To Home Page</a>
     </div>
+    <button id="btn">↑</button>
+    <script src="{{ asset('js/scroll.js') }}"></script>
 </body>
 
 </html>
