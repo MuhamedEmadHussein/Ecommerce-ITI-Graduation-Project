@@ -37,7 +37,7 @@ class ProductController extends Controller
     }
     public function destroy($id){
       Product::findOrFail($id)->delete();
-      return redirect()->route('product.dashboard');  
+      return redirect()->back();  
       
     }
 
@@ -54,13 +54,18 @@ class ProductController extends Controller
             'product_price' => 'required',
             'product_availability'=>'required',
             'category_id'=>'required',
+            'photo' => 'image|mimes:jpeg,png,jpg,gif|max:4048',
         ]);
         $product = Product::findOrFail($id);
         
         if ($request->hasFile('photo')) {
+            // $photo = $request->file('photo')->getClientOriginalName();
+            // $path = $request->file('photo')->storeAs('products', $photo, 'myimages');
             $photo = $request->file('photo')->getClientOriginalName();
-            $path = $request->file('photo')->storeAs('products', $photo, 'myimages');
-    
+            // $extension = $request->file('photo')->getClientOriginalExtension(); 
+            $filename = time() . '_' . $photo; 
+            $path = $request->file('photo')->storeAs('products', $filename, 'myimages');
+
             $product->update([
                 'product_name' => $request->product_name,
                 'product_price' => $request->product_price,
@@ -85,9 +90,15 @@ class ProductController extends Controller
             'product_price' => 'required',
             'product_availability'=>'required',
             'category_id'=>'required',
+            'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:4048',
         ]);
+        // $photo = $request->file('photo')->getClientOriginalName();
+        // $path = $request->file('photo')->storeAs('products',$photo,'myimages');
         $photo = $request->file('photo')->getClientOriginalName();
-        $path = $request->file('photo')->storeAs('products',$photo,'myimages');
+        // $extension = $request->file('photo')->getClientOriginalExtension(); 
+        $filename = time() . '_' . $photo; 
+        $path = $request->file('photo')->storeAs('products', $filename, 'myimages');
+
         Product::create([
             'product_name'=>$request->product_name,
             'product_price'=>$request->product_price,

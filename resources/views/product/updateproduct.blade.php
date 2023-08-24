@@ -66,10 +66,16 @@
                 </div>
                 <div class="mb-3">
                     <label for="photo" class="form-label">Product Photo</label>
-                    <input type="file" name="photo" class="form-control">
+                    <input value="{{ $product->product_picture }}" type="file" name="photo"
+                        class="form-control-file @error('photo') is-invalid @enderror">
+                    @error('photo')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
                     @if ($product->product_picture)
                         <img width="100px" height="100px" src="{{ asset('imgs/' . $product->product_picture) }}"
                             alt="No">
+                        <input type="text" name="existing_photo"
+                            value="{{ asset('imgs/' . $product->product_picture) }}" hidden>
                     @endif
                 </div>
                 <button type="submit" class="btn btn-primary">Update</button>

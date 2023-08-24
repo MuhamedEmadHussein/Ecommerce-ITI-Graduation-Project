@@ -94,7 +94,10 @@
                 </div>
             </form>
         </div>
-
+        @if (Auth::user()->admin == 1)
+            <a style="margin-left: 10px;background-color:rgb(3, 90, 3); width:20%" class="action-button" role="button"
+                href="{{ route('category.create') }}">Add Category</a>
+        @endif
         <table>
             <thead>
                 <tr>
