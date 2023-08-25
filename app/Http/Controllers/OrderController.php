@@ -41,14 +41,16 @@ class OrderController extends Controller
      */
     public function make_order(Request $request, $id){    
         $product = Product::findOrFail($id);
+        $quantity = $request->quantity ?? 1;
         $order = Order::create([
-            'price'=>$product->product_price * $request->quantity,
+            'price'=>$product->product_price * $quantity,
             'user_id'=>Auth::user()->id,
         ]);
+        
         DB::table('order_product')->insert([
             'order_id' => $order->id,
             'product_id' => $id,
-            'quantity' => $request->quantity,
+            'quantity' => $quantity,
          ]);
         //  $orders = Order::where('user_id', Auth::user()->id)->get();
          if(Auth::user()->admin==0){
