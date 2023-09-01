@@ -1,0 +1,709 @@
+{
+	"info": {
+		"_postman_id": "23331fcc-2986-4210-b55c-311a5bc44256",
+		"name": "Ecommerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16846314"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/auth/login?email=mohamedemadhu01019@gmail.com&password=0123456789",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mohamedemadhu01019@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "0123456789"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/auth/register",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/auth/logout",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/auth/refresh?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM2MDI3NTUsImV4cCI6MTY5MzYwNjM1NSwibmJmIjoxNjkzNjAyNzU1LCJqdGkiOiJ5cnl3WWZ6U1NvbzFEM0p2Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.l9OMSyQGJc09sbeSaqkh9OSRoqIi3XQ0X0w-k2Pplvo",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"auth",
+						"refresh"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM2MDI3NTUsImV4cCI6MTY5MzYwNjM1NSwibmJmIjoxNjkzNjAyNzU1LCJqdGkiOiJ5cnl3WWZ6U1NvbzFEM0p2Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.l9OMSyQGJc09sbeSaqkh9OSRoqIi3XQ0X0w-k2Pplvo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/auth/user-profile?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjgzNjAsImV4cCI6MTY5MzU3MTk2MSwibmJmIjoxNjkzNTY4MzYxLCJqdGkiOiJMemhrMWxBeHJZaFpFSGd2Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.3GnbNns4Cl_lvjksTw-CS_ShPFonWCA57wS9R-jp_NE",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"auth",
+						"user-profile"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjgzNjAsImV4cCI6MTY5MzU3MTk2MSwibmJmIjoxNjkzNTY4MzYxLCJqdGkiOiJMemhrMWxBeHJZaFpFSGd2Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.3GnbNns4Cl_lvjksTw-CS_ShPFonWCA57wS9R-jp_NE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1Mjk3NzQsImV4cCI6MTY5MzUzMzM3NCwibmJmIjoxNjkzNTI5Nzc0LCJqdGkiOiJZeTA1YzhoODBaSno3ajlOIiwic3ViIjoiNSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Xa4tjBjTyPYJeCO-nz3fypuXtRAs4U7H5GS29xpwF4M",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1Mjk3NzQsImV4cCI6MTY5MzUzMzM3NCwibmJmIjoxNjkzNTI5Nzc0LCJqdGkiOiJZeTA1YzhoODBaSno3ajlOIiwic3ViIjoiNSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Xa4tjBjTyPYJeCO-nz3fypuXtRAs4U7H5GS29xpwF4M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/products?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/product/10?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1MjgwNjAsImV4cCI6MTY5MzUzMTY2MCwibmJmIjoxNjkzNTI4MDYwLCJqdGkiOiI2OWVQUHAxOEQwcnhMOWxuIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oNOCnDmEiadNihv9tjP1xTDb_CPfPuyfjVAEn0P51gc",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"product",
+						"10"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1MjgwNjAsImV4cCI6MTY5MzUzMTY2MCwibmJmIjoxNjkzNTI4MDYwLCJqdGkiOiI2OWVQUHAxOEQwcnhMOWxuIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oNOCnDmEiadNihv9tjP1xTDb_CPfPuyfjVAEn0P51gc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Product",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Popcorn",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "product_availability",
+							"value": "Available",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "product_picture",
+							"type": "file",
+							"src": "/C:/Users/Solimna Sore/Pictures/117193842_3276087382411404_4986431553903478682_n.jpg"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{product_url}}/product/create",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"product",
+						"create"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{product_url}}/product/12",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"product",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "Coca Cola",
+							"type": "text"
+						},
+						{
+							"key": "product_price",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1MjgwNjAsImV4cCI6MTY5MzUzMTY2MCwibmJmIjoxNjkzNTI4MDYwLCJqdGkiOiI2OWVQUHAxOEQwcnhMOWxuIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oNOCnDmEiadNihv9tjP1xTDb_CPfPuyfjVAEn0P51gc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{product_url}}/product/5",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"product",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/search?category=o",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "o"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/search?name=m&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1MjgwNjAsImV4cCI6MTY5MzUzMTY2MCwibmJmIjoxNjkzNTI4MDYwLCJqdGkiOiI2OWVQUHAxOEQwcnhMOWxuIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oNOCnDmEiadNihv9tjP1xTDb_CPfPuyfjVAEn0P51gc",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "m"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1MjgwNjAsImV4cCI6MTY5MzUzMTY2MCwibmJmIjoxNjkzNTI4MDYwLCJqdGkiOiI2OWVQUHAxOEQwcnhMOWxuIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oNOCnDmEiadNihv9tjP1xTDb_CPfPuyfjVAEn0P51gc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sorting_Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/products_sort?sort=-product_price&per_page=10&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"products_sort"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "-product_price"
+						},
+						{
+							"key": "per_page",
+							"value": "10"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/categories?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"categories"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/categories/1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"categories",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/categories?category_name=Electerical Devices&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTkwMjEsImV4cCI6MTY5MzYwMjYyMSwibmJmIjoxNjkzNTk5MDIxLCJqdGkiOiJWaFBKTjJuZmlEUGw1TVV3Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.b5oNau_SOUpeCiSmv2XBWVWp_nQt9kC-HYPNfrXLBn8",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"categories"
+					],
+					"query": [
+						{
+							"key": "category_name",
+							"value": "Electerical Devices"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTkwMjEsImV4cCI6MTY5MzYwMjYyMSwibmJmIjoxNjkzNTk5MDIxLCJqdGkiOiJWaFBKTjJuZmlEUGw1TVV3Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.b5oNau_SOUpeCiSmv2XBWVWp_nQt9kC-HYPNfrXLBn8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/categories/23?category_name=Dvices&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"categories",
+						"23"
+					],
+					"query": [
+						{
+							"key": "category_name",
+							"value": "Dvices"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/categories/23?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"categories",
+						"23"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/orders?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjczMTQsImV4cCI6MTY5MzU3MDkxNCwibmJmIjoxNjkzNTY3MzE0LCJqdGkiOiJlQmdwbk8wTHVmMUt6VjA1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VwHhNKkv03kR7m6MsD4VYw-n3ZRziz6yFs3Z1N6UV38",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"orders"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjczMTQsImV4cCI6MTY5MzU3MDkxNCwibmJmIjoxNjkzNTY3MzE0LCJqdGkiOiJlQmdwbk8wTHVmMUt6VjA1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VwHhNKkv03kR7m6MsD4VYw-n3ZRziz6yFs3Z1N6UV38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/admin_orders?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjczMTQsImV4cCI6MTY5MzU3MDkxNCwibmJmIjoxNjkzNTY3MzE0LCJqdGkiOiJlQmdwbk8wTHVmMUt6VjA1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VwHhNKkv03kR7m6MsD4VYw-n3ZRziz6yFs3Z1N6UV38",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"admin_orders"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1NjczMTQsImV4cCI6MTY5MzU3MDkxNCwibmJmIjoxNjkzNTY3MzE0LCJqdGkiOiJlQmdwbk8wTHVmMUt6VjA1Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VwHhNKkv03kR7m6MsD4VYw-n3ZRziz6yFs3Z1N6UV38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/order/make/37?quantity=3&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"order",
+						"make",
+						"37"
+					],
+					"query": [
+						{
+							"key": "quantity",
+							"value": "3"
+						},
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvcmVmcmVzaCIsImlhdCI6MTY5MzYwMjc1NSwiZXhwIjoxNjkzNjA2MzcwLCJuYmYiOjE2OTM2MDI3NzAsImp0aSI6IjY3dGRnM25oVnlDaWNpVzEiLCJzdWIiOiIyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xMWNsyLsng0KagkIHfPNgtf9mh4CBYllqBXrbSJxaR4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/orders/143?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1Njc4MzgsImV4cCI6MTY5MzU3MTQzOCwibmJmIjoxNjkzNTY3ODM4LCJqdGkiOiJkQk0zYnBJVXhyd1lkbmhNIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ybnWH0e3VTbeLgPDLgmYpH_l9moB4IFMQEQWcSIla3Y",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"orders",
+						"143"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1Njc4MzgsImV4cCI6MTY5MzU3MTQzOCwibmJmIjoxNjkzNTY3ODM4LCJqdGkiOiJkQk0zYnBJVXhyd1lkbmhNIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ybnWH0e3VTbeLgPDLgmYpH_l9moB4IFMQEQWcSIla3Y"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "make_admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/admin/5?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"admin",
+						"5"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{product_url}}/users?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso",
+					"host": [
+						"{{product_url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTM1OTc1NzQsImV4cCI6MTY5MzYwMTE3NCwibmJmIjoxNjkzNTk3NTc0LCJqdGkiOiI5Ync5cWlXdFd2TUpRV3QzIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CjOsB_2ZQtmkR714PBwIK5kcAGnAY6H36jTdvCAPUso"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "product_url",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
